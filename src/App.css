@@ -1,0 +1,220 @@
+/*.color1 { #72bab0 };
+.color2 { #f0c69c };
+.color3 { #d1284f };
+.color4 { #9e0e30 };
+.color5 { #301a1a };*/
+
+@font-face {
+  font-family: 'Raleway';
+  src: url("./assets/fuentes/Raleway/Raleway-VariableFont_wght.ttf");
+}
+
+@font-face {
+  font-family: 'Cormorant Garamond', serif;
+  src: url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@700&display=swap')
+}
+
+body{
+  margin: 0;
+  background-image: url("./assets/fondo/fondo.jpg");
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+/* body {
+  background-color: rgb(14, 14, 14);
+} */
+
+/*--- CSS GENERAL ---*/
+
+.navbar{
+  background-attachment: fixed;
+  background-color: #f0c69c;
+  border-bottom: #f0c69c;
+  border-style: solid;
+}
+
+.nav-link{
+  color: white;
+  margin-inline: 20px;
+  font-size: 1.25rem;
+}
+
+.nav-link:hover{
+  color: #f0c69c;
+}
+
+.navbar-img{
+  width: 150px;
+  margin-inline: 20px;
+}
+
+@media (min-width: 992px) and (max-width: 1550px) {
+  .nav-link{
+      margin-left: 5px;
+  }
+}
+
+@media (max-width: 992px) {
+  .navbar{
+      padding-inline: 20px;
+  }
+
+  .navbar-nav{
+      margin-top: 20px;
+  }
+
+  .nav-link{
+      margin: 0;
+  }
+}
+
+.presentation {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  margin-top: 100px;
+}
+
+.logo25 {
+  width: 580px;
+}
+
+.presentation .text {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.tituloLanding {
+  text-align: center;
+  font-size: 6rem;
+  font-family: 'Cormorant Garamond', serif;
+  color: white;
+}
+
+.text p {
+  font-size: 2rem;
+  font-family: 'Raleway';
+  color: rgb(209, 209, 209);
+  max-width: 700px;
+  text-align: center;
+}
+
+.arrow {
+  display: flex;
+  gap: 20px;
+  margin-top: 50px;
+  justify-content: center;
+  align-items: center;
+}
+
+.arrow img {
+  width: 60px;
+  animation: tamano 1.5s infinite;
+  transition: .2s;
+}
+
+.arrow img:hover {
+  cursor: pointer;
+  scale: 1.1;
+  animation: tamano paused;
+}
+
+.arrow p {
+  margin: 0;
+  color: white;
+  font-size: 3rem;
+}
+
+@keyframes tamano {
+  0% {
+    scale: 1;
+  }
+  50% {
+    scale: 1.2;
+  }
+  100% {
+    scale: 1;
+  }
+}
+
+/*   --- FORMULARIO PRESUPUESTO ---   */
+
+.subtitulo{
+  color: white;
+}
+
+.titulo{
+  color: #f0c69c;
+}
+
+.hrForm{
+  border: none;
+  height: 4px;
+  background: #f0c69c;
+}
+
+.formulario-presupuesto p{
+  color: #f0c69c;
+}
+
+/*   --- VALIDACION ---   */
+
+.invalid-feedback{
+  color: #f0c69c;
+}
+
+
+/*--- CSS CORRESPONDIENTE A LOGIN.HTML ---*/
+
+.ventana{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.ventana-form, .ventana-extra{
+  width: 50%;
+  margin: 0;
+  height: 100vh;
+
+}
+
+.ventana-form{
+  background-color: #f0c69c;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.ventana-extra{
+  background: linear-gradient(#9e0e30, #301a1a);
+}
+
+.form{
+  width: 65%;
+  height: 75%;
+  border-radius: 20px;
+  background-color: #301a1a;
+  font-family: 'Raleway';
+}
+
+.form-title{
+  margin: 40px;
+  color: #f0c69c;
+}
+
+#form-login, #form-signup{
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  margin: 40px;
+}
+
+#logo-login{
+  position: relative;
+  width: 30vw;
+  top: 35vh;
+  left: 10vw;
+}
